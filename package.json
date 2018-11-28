@@ -1,6 +1,6 @@
 {
   "name": "generate-nodejs-templates",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a cli to generate the boiler plate code for various nodejs applications",
   "main": "index.js",
   "dependencies": {
@@ -13,7 +13,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "node",
+    "node-cli",
+    "boiler-plate-code"
+  ],
+  "author": "Pramod",
+  "license": "MIT"
 }
