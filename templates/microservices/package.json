@@ -1,15 +1,11 @@
 {
   "name": "nodejs-cinemas",
   "version": "1.0.0",
-  "description": "This is a nodejs microservices based cinema application",
+  "description": "This is a nodejs microservices based application",
   "main": "server.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/krishnapramodaradhi/nodejs-cinemas.git"
   },
   "keywords": [
     "Microservices",
@@ -20,14 +16,12 @@
   ],
   "author": "Pramod",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/krishnapramodaradhi/nodejs-cinemas/issues"
-  },
-  "homepage": "https://github.com/krishnapramodaradhi/nodejs-cinemas#readme",
   "dependencies": {
+    "dot-env": "^6.1.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "helmet": "^3.15.0",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.6"
   }
 }

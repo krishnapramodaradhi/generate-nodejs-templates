@@ -1,6 +1,6 @@
 {
   "name": "generate-nodejs-templates",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is a cli to generate the boiler plate code for various nodejs applications",
   "main": "index.js",
   "dependencies": {

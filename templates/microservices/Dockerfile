@@ -1,22 +1,14 @@
-FROM node:alpine
+FROM node:10.13-alpine
 
-RUN addgroup -S yodoc && adduser -S -g yodoc yodoc
+RUN mkdir -p /usr/src/app/
 
-ENV HOME=/home/yodoc
+WORKDIR /usr/src/app/
 
-COPY package.json package-lock.json $HOME/app/
+COPY package*.json /usr/src/app/
 
-COPY src $HOME/app/src
+RUN npm install
 
-RUN chown -R yodoc:yodoc $HOME/* /usr/local/
-
-WORKDIR $HOME/app
-
-RUN npm install --silent --progress=false --production
-
-RUN chown -R yodoc:yodoc $HOME/*
-
-USER yodoc
+COPY . /usr/src/app/
 
 EXPOSE 3000
 
